@@ -1,0 +1,9 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Lora', serif;
+	color: #171717;
+	margin: 0px;
+}
