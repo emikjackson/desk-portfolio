@@ -1,4 +1,6 @@
 <script>
+	import LinkButton from './LinkButton.svelte';
+
 	const projects = [
 		{
 			title: 'Note Sequence Guesser',
@@ -20,8 +22,8 @@
 					<div class="technology-item">{technologyItem}</div>
 				{/each}
 			</div>
-			<a href={project.siteLink} rel="noopener noreferrer" target="_blank">Live Site</a>
-			<a href={project.githubLink} rel="noopener noreferrer" target="_blank">GitHub Link</a>
+			<LinkButton href={project.siteLink}>View site</LinkButton>
+			<LinkButton href={project.githubLink} secondary>GitHub</LinkButton>
 		</div>
 	{/each}
 </div>

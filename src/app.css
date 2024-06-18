@@ -1,9 +1,17 @@
+:root {
+	--text-color: #171717;
+}
+
 html {
 	scroll-behavior: smooth;
 }
 
 body {
 	font-family: 'Lora', serif;
-	color: #171717;
+	color: var(--text-color);
 	margin: 0px;
+}
+
+a {
+	color: #077083;
 }

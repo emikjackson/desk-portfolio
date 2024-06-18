@@ -5,6 +5,7 @@
 	import SectionContent from '$lib/components/SectionContent.svelte';
 	import introImg from '$lib/assets/intro.png';
 	import ProjectCards from '$lib/components/ProjectCards.svelte';
+	import ReferenceLinks from '$lib/components/ReferenceLinks.svelte';
 </script>
 
 <Desk />
@@ -19,11 +20,11 @@
 		<p>Let's get properly introduced!</p>
 		<p>
 			I'm a professional software engineer with a focus on full-stack web development and design. I
-			especially love building high quality, accessible tools to help <strong
-				>better serve the public</strong
+			especially love building high quality, accessible tools that <strong
+				>promote social equity</strong
 			>
 			and
-			<strong>promote social equity</strong>.
+			<strong>explore science concepts</strong>.
 		</p>
 		<p>
 			I also make silly websites for family & friends, and enjoy working with others on creative
@@ -52,13 +53,13 @@
 			<li>Data procurement assitance / web scraping</li>
 			<li>User experience testing</li>
 		</ul>
-		<p>I've helped create many professional, both individually and on teams.</p>
-		<p>Link to resume, link to github</p>
+		<p>I've helped create many professional websites, both individually and on teams.</p>
 		<p>
 			Outside of building professional websites, I also like making some sites for personal
-			enjoyment or for loved ones. Check a few out below!
+			enjoyment or for loved ones.
 		</p>
-		<ProjectCards />
+		<p>For more details and recent examples, check out my resume or GitHub profile.</p>
+		<ReferenceLinks />
 	</SectionContent>
 	<SectionImage
 		src={introImg}
