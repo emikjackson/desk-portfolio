@@ -18,8 +18,8 @@
 	<SectionImage
 		src={introImg}
 		alt="Waving smiling woman with dark, medium-length hair and crescent earrings"
-		height="260px"
-		width="289px"
+		height="240px"
+		width="268px"
 	/>
 	<SectionContent title="If you're new here ..." id="intro">
 		<p>Let's get properly introduced!</p>

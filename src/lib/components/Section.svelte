@@ -31,12 +31,11 @@
 		justify-content: center;
 		align-items: flex-start;
 		border-top: none;
-		margin-top: 20px;
-		gap: 20px;
+		gap: 30px;
 	}
 	.content.divider {
 		border-top: 1px solid rgb(231, 231, 231);
-		margin-top: 60px;
+		margin-top: 80px;
 	}
 	.content.nested {
 		justify-content: flex-start;
