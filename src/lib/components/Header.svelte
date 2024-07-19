@@ -1,10 +1,8 @@
 <nav>
 	<a href="/" class="title">EJ</a>
 	<div>
-		<a href="#intro">Introduction</a>
-		<a href="#web">Web development</a>
-		<a href="#art">Art & Animation</a>
-		<a href="#sewing">Sewing & mending</a>
+		<a href="#web">Web</a>
+		<a href="#art">Art</a>
 	</div>
 </nav>
 
@@ -25,5 +23,9 @@
 	}
 	.title:hover {
 		text-shadow: 3px 3px 0px #b7e3ff;
+	}
+	a {
+		margin-left: 4px;
+		font-weight: 600;
 	}
 </style>

@@ -3,67 +3,91 @@
 	import Section from '$lib/components/Section.svelte';
 	import SectionImage from '$lib/components/SectionImage.svelte';
 	import SectionContent from '$lib/components/SectionContent.svelte';
-	import introImg from '$lib/assets/intro.png';
-	import ProjectCards from '$lib/components/ProjectCards.svelte';
+	import introImg from '$lib/assets/intro_cropped.png';
+	import webImg from '$lib/assets/web.png';
+	import artImg from '$lib/assets/art.png';
 	import ReferenceLinks from '$lib/components/ReferenceLinks.svelte';
+	import ProjectTiles from '$lib/components/ProjectTiles.svelte';
+	import DevToolsList from '$lib/components/DevToolsList.svelte';
+	import FooterLinks from '$lib/components/FooterLinks.svelte';
 </script>
 
 <Desk />
 
-<Section>
+<Section divider={true}>
 	<SectionImage
 		src={introImg}
-		alt="Waving smiling woman with dark hair and crescent earrings"
+		alt="Waving smiling woman with dark, medium-length hair and crescent earrings"
 		height="260px"
+		width="289px"
 	/>
 	<SectionContent title="If you're new here ..." id="intro">
 		<p>Let's get properly introduced!</p>
 		<p>
-			I'm a professional software engineer with a focus on full-stack web development and design. I
-			especially love building high quality, accessible tools that <strong
-				>promote social equity</strong
+			I'm a professional software engineer with a focus on <strong
+				>full-stack web development</strong
+			>. I find satisfaction in building high quality web applications.
+		</p>
+		<p>
+			I also love learning and helping others learn new scientific concepts. I recently worked as a
+			museum
+			<strong>science educator</strong>, and these days you can often find me reading about ecology
+			and relativity in physics.
+		</p>
+		<p>
+			On the more creative side of things, I enjoy drawing, painting, occasional music-making, and
+			sewing/mending.
+		</p>
+		<p>
+			If you're here, you may be interested in working with me. If so, reach out anytime at <a
+				href="mailto:emikjackson@gmail.com?subject=Website Contact"
 			>
-			and
-			<strong>explore science concepts</strong>.
-		</p>
-		<p>
-			I also make silly websites for family & friends, and enjoy working with others on creative
-			projects (drawing, animation, sewing).
-		</p>
-		<p>
-			If you're visiting this site, you may be interesting in hiring or working on something
-			creative with me.
-		</p>
-		<p>
-			If so, contact me anytime at <a href="mailto:emikjackson@gmail.com?subject=Website Contact">
-				emikjackson@gmail.com
-			</a>.
+				emikjackson@gmail.com</a
+			>.
 		</p>
 	</SectionContent>
 </Section>
 
-<Section secondary={true} divider={false}>
+<Section secondary={true} flip={true} style="margin-bottom: 20px;">
 	<SectionContent title="Web development" id="web">
 		<p>
-			What does it mean to build websites or web tools? Here's what typically goes into one of my
-			web development projects.
+			Here are some common pieces in my development process, along with my most frequently used
+			applications, languages, and libraries.
 		</p>
-		<ul>
-			<li>Dynamic user interface</li>
-			<li>Data procurement assitance / web scraping</li>
-			<li>User experience testing</li>
-		</ul>
-		<p>I've helped create many professional websites, both individually and on teams.</p>
+		<DevToolsList />
 		<p>
-			Outside of building professional websites, I also like making some sites for personal
-			enjoyment or for loved ones.
+			Check out my <a
+				href="https://github.com/emikjackson"
+				rel="noopener noreferrer"
+				target="_blank">GitHub profile</a
+			> or see below for recent project examples.
 		</p>
-		<p>For more details and recent examples, check out my resume or GitHub profile.</p>
-		<ReferenceLinks />
 	</SectionContent>
 	<SectionImage
-		src={introImg}
-		alt="Waving smiling woman with dark hair and crescent earrings"
-		height="260px"
+		src={webImg}
+		alt="web page broken down as if being designed and interacted with, with a leaf visual and map"
+		width="360px"
+		height="337px"
 	/>
 </Section>
+
+<Section secondary={true} nested={true}>
+	<SectionContent title="Recent projects" subtitle={true} id="web">
+		<ProjectTiles />
+	</SectionContent>
+</Section>
+
+<Section flip={true}>
+	<SectionContent title="Art & Animation" id="art">
+		<p>Not professionally, I also like to draw, paint, sew, etc!</p>
+		<p>Will add a small portfolio or link here soon.</p>
+	</SectionContent>
+	<SectionImage
+		src={artImg}
+		alt="Paper with stick figure animation frames next to cup with pens, pencils, and paintbrush"
+		height="260px"
+		width="329px"
+	/>
+</Section>
+
+<FooterLinks />
