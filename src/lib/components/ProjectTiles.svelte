@@ -3,19 +3,18 @@
 	import earTrainerImg from '$lib/assets/projects/ear_trainer.png';
 	import fertilizerMapImg from '$lib/assets/projects/fertilizer_map.png';
 	import ProjectLinks from './ProjectLinks.svelte';
-	import GithubLink from './ProjectLinks.svelte';
 
 	const projects = [
 		{
 			title: 'Client Note Tracker',
-			text: 'Web version for note taking application.',
+			text: 'The web version for simple note taking application. Primarily used by small businesses with over 1k users.',
 			technologies: ['Svelte', 'Django', 'PostgreSQL'],
 			image: clientNoteTrackerImg,
 			siteLink: 'https://www.clientnotetracker.com/'
 		},
 		{
 			title: 'Ear Trainer 3000',
-			text: 'Listen-and-guess music quiz, for funsies.',
+			text: 'A little listen-and-guess music quiz. Style inspired by an electronic metronome I practiced with growing up.',
 			technologies: ['Svelte', 'AudioContext'],
 			image: earTrainerImg,
 			siteLink: 'https://ear-trainer-3000.vercel.app/',
@@ -23,10 +22,10 @@
 		},
 		{
 			title: 'Fertilizer Usage in the USA',
-			text: 'Exploring Nitrogen & Phosphorus fertilizer usage by county from 1950-2017.',
+			text: 'Exploring Nitrogen & Phosphorus fertilizer usage by county from 1950-2017. Data from USGS.',
 			technologies: ['React', 'Leaflet', 'Python'],
 			image: fertilizerMapImg,
-			siteLink: '',
+			siteLink: 'https://fertilizer-map.vercel.app/',
 			githubLink: 'https://github.com/emikjackson/fertilizer-map'
 		}
 	];

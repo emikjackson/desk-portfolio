@@ -6,7 +6,6 @@
 	import introImg from '$lib/assets/intro_cropped.png';
 	import webImg from '$lib/assets/web.png';
 	import artImg from '$lib/assets/art.png';
-	import ReferenceLinks from '$lib/components/ReferenceLinks.svelte';
 	import ProjectTiles from '$lib/components/ProjectTiles.svelte';
 	import DevToolsList from '$lib/components/DevToolsList.svelte';
 	import FooterLinks from '$lib/components/FooterLinks.svelte';
@@ -66,8 +65,9 @@
 	<SectionImage
 		src={webImg}
 		alt="web page broken down as if being designed and interacted with, with a leaf visual and map"
-		width="360px"
-		height="337px"
+		width="390px"
+		height="248px"
+		transitionDelay={0.67}
 	/>
 </Section>
 
@@ -87,6 +87,7 @@
 		alt="Paper with stick figure animation frames next to cup with pens, pencils, and paintbrush"
 		height="260px"
 		width="329px"
+		transitionDelay={1}
 	/>
 </Section>
 

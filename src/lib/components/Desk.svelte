@@ -3,13 +3,16 @@
 	 * Hero display of large desk image & intro text
 	 */
 	import deskImg from '$lib/assets/full_desk.png';
-	import { fade } from 'svelte/transition';
+	import { onMount } from 'svelte';
+
+	let show = false;
+	onMount(() => (show = true));
 </script>
 
 <div class="wrapper">
 	<div class="column">
 		<img
-			transition:fade
+			class:show
 			src={deskImg}
 			alt="Sketch of office setup with a laptop, art supplies, & a sewing machine. A cat is below the desk."
 		/>
@@ -36,6 +39,13 @@
 	img {
 		width: 700px;
 		height: 525px;
+		opacity: 0;
+		transform: translateY(5px);
+		transition: all 2s ease;
+	}
+	img.show {
+		opacity: 1;
+		transform: translateY(0px);
 	}
 	.text {
 		display: flex;
