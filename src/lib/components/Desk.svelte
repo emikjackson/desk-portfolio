@@ -16,7 +16,7 @@
 			src={deskImg}
 			alt="Sketch of office setup with a laptop, art supplies, & a sewing machine. A cat is below the desk."
 		/>
-		<div class="text">
+		<div class="text" class:show>
 			<h2 class="desktop">Hi, welcome to my desk! I'm Emi.</h2>
 			<h2 class="mobile">Hi, welcome to my desk!<br />I'm Emi.</h2>
 			<p>I like to make <strong>web tools</strong> and do other things.</p>
@@ -41,9 +41,11 @@
 		height: 525px;
 		opacity: 0;
 		transform: translateY(5px);
-		transition: all 2s ease;
+		transition: all 1.5s ease;
 	}
-	img.show {
+	.show,
+	.show h2,
+	.show p {
 		opacity: 1;
 		transform: translateY(0px);
 	}
@@ -53,6 +55,16 @@
 		justify-content: center;
 		align-items: flex-start;
 		padding-right: 60px;
+	}
+	h2,
+	p {
+		opacity: 0;
+		transform: translateY(5px);
+		transition: all 1.5s ease;
+		transition-delay: 0.5s;
+	}
+	p {
+		transition-delay: 1s;
 	}
 	.desktop {
 		display: block;

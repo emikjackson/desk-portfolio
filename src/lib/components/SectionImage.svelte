@@ -26,7 +26,7 @@
 		margin-top: 40px;
 		opacity: 0;
 		transform: translateY(5px);
-		transition: all 2s ease;
+		transition: all 1.5s ease;
 	}
 
 	img.show {
