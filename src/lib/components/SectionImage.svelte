@@ -5,14 +5,13 @@
 	export let alt;
 	export let width = 'auto';
 	export let height = 'auto';
-	export let transitionDelay = 0.33;
 
 	let show = false;
 	onMount(() => (show = true));
 </script>
 
 <div class="wrapper">
-	<img class:show style={`transition-delay: ${transitionDelay}s`} {src} {alt} {width} {height} />
+	<img class:show {src} {alt} {width} {height} />
 </div>
 
 <style>
@@ -25,8 +24,7 @@
 		margin: 20px;
 		margin-top: 40px;
 		opacity: 0;
-		transform: translateY(5px);
-		transition: all 1.5s ease;
+		transition: opacity 1s ease;
 	}
 
 	img.show {

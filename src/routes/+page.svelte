@@ -25,7 +25,7 @@
 		<p>
 			I'm a professional software engineer with a focus on <strong
 				>full-stack web development</strong
-			>. I find satisfaction in building high quality web applications.
+			>. I find satisfaction in building high quality, accessible web applications.
 		</p>
 		<p>
 			I also love learning and helping others learn new scientific concepts. I recently worked as a
@@ -67,7 +67,6 @@
 		alt="web page broken down as if being designed and interacted with, with a leaf visual and map"
 		width="390px"
 		height="248px"
-		transitionDelay={0.67}
 	/>
 </Section>
 
@@ -87,7 +86,6 @@
 		alt="Paper with stick figure animation frames next to cup with pens, pencils, and paintbrush"
 		height="260px"
 		width="329px"
-		transitionDelay={1}
 	/>
 </Section>
 
