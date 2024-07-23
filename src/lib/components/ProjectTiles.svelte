@@ -21,8 +21,8 @@
 			githubLink: 'https://github.com/emikjackson/ear-trainer-3000'
 		},
 		{
-			title: 'Fertilizer Usage in the USA',
-			text: 'Exploring Nitrogen & Phosphorus fertilizer usage by county from 1950-2017. Data from USGS.',
+			title: 'Fertilizer Usage in the U.S.',
+			text: 'Exploring estimated Nitrogen & Phosphorus fertilizer usage by county from 1950-2017. Data from USGS.',
 			technologies: ['React', 'Leaflet', 'Python'],
 			image: fertilizerMapImg,
 			siteLink: 'https://fertilizer-map.vercel.app/',
@@ -41,14 +41,11 @@
 				<a href={project.siteLink} rel="noopener noreferrer" target="_blank">
 					<h3>{project.title}</h3>
 				</a>
-				<ProjectLinks githubLink={project.githubLink} siteLink={project.siteLink} />
+				<ProjectLinks githubLink={project.githubLink} />
 			</div>
 			<p>{project.text}</p>
 			<div class="technologies">
 				{project.technologies.join(', ')}
-				<!-- {#each project.technologies as technologyItem}
-					<div class="technology-item">{technologyItem}</div>
-				{/each} -->
 			</div>
 		</div>
 	{/each}
