@@ -25,7 +25,7 @@
 		<p>
 			I'm a professional software engineer with a focus on <strong
 				>full-stack web development</strong
-			>. I find satisfaction in building high quality, accessible web applications.
+			> and design. I find satisfaction in building high quality, accessible web applications.
 		</p>
 		<p>
 			I also love learning and helping others learn new scientific concepts. I recently worked as a
@@ -72,6 +72,10 @@
 
 <Section secondary={true} nested={true}>
 	<SectionContent title="Recent projects" subtitle={true} id="web">
+		<p>
+			While much of my professional work has been done collaboratively on teams, here are a couple
+			of recent projects I've created individually to try out new concepts.
+		</p>
 		<ProjectTiles />
 	</SectionContent>
 </Section>

@@ -9,11 +9,15 @@
 		<div class="visually-hidden">Email me</div>
 		<EmailIcon width={36} />
 	</a>
-	<a href="https://github.com/emikjackson" rel="noopener noreferrer">
+	<a href="https://github.com/emikjackson" rel="noopener noreferrer" target="_blank">
 		<div class="visually-hidden">Github</div>
 		<GithubIcon width={36} />
 	</a>
-	<a href="https://www.linkedin.com/in/emi-jackson-a313b7139/" rel="noopener noreferrer">
+	<a
+		href="https://www.linkedin.com/in/emi-jackson-a313b7139/"
+		rel="noopener noreferrer"
+		target="_blank"
+	>
 		<div class="visually-hidden">LinkedIn</div>
 		<LinkedInIcon width={36} />
 	</a>

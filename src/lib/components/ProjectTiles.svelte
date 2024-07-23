@@ -2,19 +2,20 @@
 	import clientNoteTrackerImg from '$lib/assets/projects/client_note_tracker.png';
 	import earTrainerImg from '$lib/assets/projects/ear_trainer.png';
 	import fertilizerMapImg from '$lib/assets/projects/fertilizer_map.png';
+	import soupImg from '$lib/assets/projects/soup.png';
 	import ProjectLinks from './ProjectLinks.svelte';
 
 	const projects = [
 		{
 			title: 'Client Note Tracker',
-			text: 'The web version for simple note taking application. Primarily used by small businesses with over 1k users.',
+			text: 'The web frontend, plus some backend contributions, for a simple note taking application. Used by over 1k users.',
 			technologies: ['Svelte', 'Django', 'PostgreSQL'],
 			image: clientNoteTrackerImg,
 			siteLink: 'https://www.clientnotetracker.com/'
 		},
 		{
 			title: 'Ear Trainer 3000',
-			text: 'A little listen-and-guess music quiz. Style inspired by an electronic metronome I practiced with growing up.',
+			text: 'A little listen-and-guess music quiz, for funsies. Style inspired by an electronic metronome I practiced with growing up.',
 			technologies: ['Svelte', 'AudioContext'],
 			image: earTrainerImg,
 			siteLink: 'https://ear-trainer-3000.vercel.app/',
@@ -27,6 +28,14 @@
 			image: fertilizerMapImg,
 			siteLink: 'https://fertilizer-map.vercel.app/',
 			githubLink: 'https://github.com/emikjackson/fertilizer-map'
+		},
+		{
+			title: 'We Like Soup',
+			text: "Made this small soup site to explore SVG animations, while highlighting some of my coworkers' favorite soups.",
+			technologies: ['Svelte', 'SVG animation with JS+CSS'],
+			image: soupImg,
+			siteLink: 'https://we-like-soup.vercel.app/',
+			githubLink: 'https://github.com/emikjackson/we-like-soup'
 		}
 	];
 </script>
@@ -43,7 +52,13 @@
 				</a>
 				<ProjectLinks githubLink={project.githubLink} />
 			</div>
-			<p>{project.text}</p>
+			<p>
+				{project.text}
+
+				{#if project.githubLink}
+					<a href={project.githubLink} rel="noopener noreferrer" target="_blank">View code</a>
+				{/if}
+			</p>
 			<div class="technologies">
 				{project.technologies.join(', ')}
 			</div>
@@ -53,15 +68,18 @@
 
 <style>
 	.wrapper {
+		margin-top: 26px;
 		display: flex;
-		gap: 15px;
+		flex-wrap: wrap;
+		gap: 26px 2%;
 	}
 	.tile {
-		flex: 1;
+		width: 49%;
+		box-sizing: border-box;
 	}
 	.tile img {
 		width: 100%;
-		height: 180px;
+		height: 240px;
 		object-fit: cover;
 		border: 1px solid rgb(229, 229, 229);
 		border-radius: 4px;
@@ -84,10 +102,12 @@
 		color: grey;
 		font-style: italic;
 	}
+	p a {
+		font-style: italic;
+	}
 	@media (max-width: 1000px) {
 		.wrapper {
-			flex-wrap: wrap;
-			gap: 40px;
+			gap: 30px;
 		}
 		.tile {
 			flex: auto;
