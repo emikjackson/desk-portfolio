@@ -71,10 +71,10 @@
 </Section>
 
 <Section secondary={true} nested={true}>
-	<SectionContent title="Recent projects" subtitle={true} id="web">
+	<SectionContent title="Interactive samples" subtitle={true} id="web">
 		<p>
-			While much of my professional work has been done collaboratively on teams, here are a couple
-			of recent projects I've created individually to try out new concepts.
+			While much of my professional work has focused on full web systems with collaborative teams,
+			here are a couple of smaller projects I've created individually to try out new concepts.
 		</p>
 		<ProjectTiles />
 	</SectionContent>
