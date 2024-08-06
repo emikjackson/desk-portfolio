@@ -74,7 +74,7 @@
 	<SectionContent title="Interactive samples" subtitle={true} id="web">
 		<p>
 			While much of my professional work has focused on full web systems with collaborative teams,
-			here are a couple of smaller projects I've created individually to try out new concepts.
+			here are a couple of smaller projects I've created recently to try out new concepts.
 		</p>
 		<ProjectTiles />
 	</SectionContent>
