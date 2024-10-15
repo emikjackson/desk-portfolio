@@ -2,6 +2,7 @@
 	import DimensionalLink from './DimensionalLink.svelte';
 	import footer from '$lib/assets/games/footer.svg';
 	import AnimatedHeart from './AnimatedHeart.svelte';
+	import GamePics from './GamePics.svelte';
 </script>
 
 <div class="wrapper">
@@ -29,7 +30,7 @@
 		</ul>
 
 		<h2 class="lalezar break">Sew Sew</h2>
-		<p class="subheader">Godot, Physical Art, 2024</p>
+		<p class="subheader">Godot, Physical Art, 2024 - In Progress</p>
 		<p>
 			My current project! Planning on it being a mostly point and click game utilizing photographs
 			of a real-world miniature set as the primary visuals.
@@ -38,6 +39,7 @@
 			Help out Z at her sewing and mending shop for a few weeks. Dive into the world of modern
 			textiles, and perhaps find yourself discovering more about the fabric of space and time?
 		</p>
+		<GamePics gameId="sewsew" />
 
 		<h2 class="lalezar break">A May Morning</h2>
 		<p class="subheader">Bitsy, Pixel Art, 2024</p>
@@ -46,6 +48,7 @@
 			Walk through a spring morning out in the garden, led by your cat. This quick narrative game is
 			inspired by my daily morning routine and memories of gardening with my grandma May.
 		</p>
+		<GamePics gameId="maymorning" />
 		<DimensionalLink link="https://movingaround.itch.io/a-may-morning"
 			>Play it on Itch</DimensionalLink
 		>
@@ -58,6 +61,7 @@
 			with a few difficulty settings available. Style inspired by an electronic metronome I
 			practiced with growing up.
 		</p>
+		<GamePics gameId="eartrainer" />
 		<DimensionalLink link="https://ear-trainer-3000.vercel.app/"
 			>Play the guessing-game</DimensionalLink
 		>
@@ -73,6 +77,7 @@
 			this grey-scale world. Talk to residents, avoid guards and energized color balls, then nab the
 			primary color crystals - just watch out for the (not so difficult) Evil Boss Man!
 		</p>
+		<GamePics gameId="colorfulworld" />
 		<DimensionalLink link="https://movingaround.itch.io/its-a-colorful-world">
 			Download Mac app on Itch
 		</DimensionalLink>
@@ -90,6 +95,7 @@
 			submarine allows them to bust through rock and fend off dangerous fish, but remains vulnerable
 			to running out of air.
 		</p>
+		<GamePics gameId="otde" />
 		<DimensionalLink link="https://www.indiedb.com/games/off-the-deep-end">
 			View the Indie DB logs
 		</DimensionalLink>
@@ -110,8 +116,8 @@
 	}
 	h2.break {
 		font-size: 3rem;
-		padding-top: 10px;
-		margin-top: 30px;
+		padding-top: 50px;
+		margin-top: 50px;
 		margin-bottom: 0px;
 		border-top: 1px solid rgba(0, 0, 0, 0.1);
 	}

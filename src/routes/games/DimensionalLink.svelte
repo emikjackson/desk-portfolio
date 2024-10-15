@@ -13,7 +13,7 @@
 
 	a.button-like {
 		position: relative;
-		padding: 8px 18px;
+		padding: 10px 20px;
 		background-color: #d82543;
 		color: #fff0f6;
 		border-radius: 8px;
@@ -22,6 +22,7 @@
 		transition: all 0.1s linear;
 		display: inline-block;
 		margin-top: 0px;
+		font-weight: 600;
 	}
 
 	.button-wrapper:hover a.button-like {
