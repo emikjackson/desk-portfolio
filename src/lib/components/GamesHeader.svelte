@@ -1,14 +1,10 @@
+<!-- Simplified header for games page -->
+
 <nav aria-labelledby="nav-label">
 	<h2 id="nav-label" class="visually-hidden">Main Menu</h2>
 	<ul>
 		<li><a href="/" class="title">EJ</a></li>
-		<li><a href="/#web">Web</a></li>
-		<li>
-			<a href="/#art">Art</a>
-		</li>
-		<!-- <li>
-			<a href="/games">Games</a>
-		</li> -->
+		<li><a href="/">← Go to EJ home</a></li>
 	</ul>
 </nav>
 
