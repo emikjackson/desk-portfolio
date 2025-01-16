@@ -2,6 +2,18 @@
 	--text-color: #171717;
 }
 
+h1 {
+	font-size: 56px;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
 html {
 	scroll-behavior: smooth;
 }

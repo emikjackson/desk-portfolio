@@ -23,7 +23,6 @@
 	h3 {
 		margin-top: 0px;
 		padding-top: 0px;
-		font-size: 1.3rem;
 	}
 	@media (max-width: 1000px) {
 		h2,

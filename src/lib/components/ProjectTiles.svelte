@@ -2,16 +2,23 @@
 	import clientNoteTrackerImg from '$lib/assets/projects/client_note_tracker.png';
 	import earTrainerImg from '$lib/assets/projects/ear_trainer.png';
 	import fertilizerMapImg from '$lib/assets/projects/fertilizer_map.png';
-	import soupImg from '$lib/assets/projects/soup.png';
+	import awcsImg from '$lib/assets/projects/awcs.png';
 	import ProjectLinks from './ProjectLinks.svelte';
 
 	const projects = [
 		{
 			title: 'Client Note Tracker',
-			text: 'The web frontend, plus some backend contributions, for a simple note taking application. Used by over 1k users.',
+			text: 'Developed complete frontend and backend routes for a simple note taking application.',
 			technologies: ['Svelte', 'Django', 'PostgreSQL'],
 			image: clientNoteTrackerImg,
 			siteLink: 'https://www.clientnotetracker.com/'
+		},
+		{
+			title: '8 Dynamics of Climate Engagement Quiz',
+			text: 'Collaborated on a quiz application for the All We Can Save project, allowing users to gauge their climate engagement and access resources.',
+			technologies: ['Svelte', 'Mailchimp Transactional API'],
+			image: awcsImg,
+			siteLink: 'https://dynamics-quiz.allwecansave.earth/'
 		},
 		{
 			title: 'Ear Trainer 3000',
@@ -28,15 +35,15 @@
 			image: fertilizerMapImg,
 			siteLink: 'https://fertilizer-map.vercel.app/',
 			githubLink: 'https://github.com/emikjackson/fertilizer-map'
-		},
-		{
-			title: 'We Like Soup',
-			text: "Made this small soup site to explore SVG animations, while highlighting some of my coworkers' favorite soups.",
-			technologies: ['Svelte', 'SVG animation with JS+CSS'],
-			image: soupImg,
-			siteLink: 'https://we-like-soup.vercel.app/',
-			githubLink: 'https://github.com/emikjackson/we-like-soup'
 		}
+		// {
+		// 	title: 'We Like Soup',
+		// 	text: "Made this small soup site to explore SVG animations, while highlighting some of my coworkers' favorite soups.",
+		// 	technologies: ['Svelte', 'SVG animation with JS+CSS'],
+		// 	image: soupImg,
+		// 	siteLink: 'https://we-like-soup.vercel.app/',
+		// 	githubLink: 'https://github.com/emikjackson/we-like-soup'
+		// }
 	];
 </script>
 

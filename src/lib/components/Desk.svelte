@@ -17,10 +17,9 @@
 			alt="Sketch of office setup with a laptop, art supplies, & a sewing machine. A cat is below the desk."
 		/>
 		<div class="text" class:show>
-			<h2 class="desktop">Hi, welcome to my desk! I'm Emi.</h2>
-			<h2 class="mobile">Hi, welcome to my desk!<br />I'm Emi.</h2>
-			<p>I like to make <strong>web tools</strong> and do other things.</p>
-			<p>Scroll on to see what I'm working on these days.</p>
+			<h1>Welcome!</h1>
+			<p>I'm Emi, a web developer based out of Detroit, Michigan.</p>
+			<p class="second-line">You've made it to my desk.</p>
 		</div>
 	</div>
 </div>
@@ -41,10 +40,10 @@
 		height: 525px;
 		opacity: 0;
 		transform: translateY(5px);
-		transition: all 1.5s ease;
+		transition: opacity 1.5s ease, transform 1.5s ease;
 	}
 	.show,
-	.show h2,
+	.show h1,
 	.show p {
 		opacity: 1;
 		transform: translateY(0px);
@@ -56,31 +55,28 @@
 		align-items: flex-start;
 		padding-right: 60px;
 	}
-	h2,
+	p {
+		margin-top: 0px;
+	}
+	h1,
 	p {
 		opacity: 0;
 		transform: translateY(5px);
 		transition: all 1.5s ease;
+	}
+	h1 {
+		margin-bottom: 30px;
+		transition: all 2s ease;
 		transition-delay: 0.5s;
 	}
 	p {
-		transition-delay: 1s;
+		transition-delay: 2s;
 	}
-	.desktop {
-		display: block;
-	}
-	.mobile {
-		display: none;
-		line-height: 2.2rem;
+	p.second-line {
+		transition-delay: 3s;
 	}
 
 	@media (max-width: 1000px) {
-		.desktop {
-			display: none;
-		}
-		.mobile {
-			display: block;
-		}
 		.column {
 			flex-direction: column;
 			gap: 10px;

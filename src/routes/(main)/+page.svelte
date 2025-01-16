@@ -27,15 +27,15 @@
 				>full-stack web development</strong
 			> and design. I find satisfaction in building high quality, accessible web applications.
 		</p>
-		<p>
+		<!-- <p>
 			I also love learning and helping others learn new scientific concepts. I recently worked as a
 			museum
 			<strong>science educator</strong>, and these days you can often find me reading about ecology
 			and relativity in physics.
-		</p>
+		</p> -->
 		<p>
 			On the more creative side of things, I enjoy drawing, painting, occasional music-making, and
-			sewing/mending.
+			mending items with the Waawiyatanong Repair Cafe and Detroit Repair Cafe.
 		</p>
 		<p>
 			If you're here, you may be interested in working with me. If so, reach out anytime at <a
@@ -62,20 +62,19 @@
 			> or see below for recent project examples.
 		</p>
 	</SectionContent>
-	<SectionImage
-		src={webImg}
-		alt="web page broken down as if being designed and interacted with, with a leaf visual and map"
-		width="390px"
-		height="248px"
-	/>
+	<div class="offset-wrapper">
+		<SectionImage
+			src={webImg}
+			alt="web page broken down as if being designed and interacted with, with a leaf visual and map"
+			width="390px"
+			height="248px"
+		/>
+	</div>
 </Section>
 
 <Section secondary={true} nested={true}>
-	<SectionContent title="Interactive samples" subtitle={true} id="web">
-		<p>
-			While much of my professional work has focused on full web systems with collaborative teams,
-			here are a couple of smaller projects I've created recently to try out new concepts.
-		</p>
+	<SectionContent title="Personal projects" subtitle={true} id="web">
+		<p>A few little samples of web applications done recently in my free time.</p>
 		<ProjectTiles />
 	</SectionContent>
 </Section>
@@ -94,3 +93,18 @@
 </Section>
 
 <FooterLinks />
+
+<style>
+	.offset-wrapper {
+		display: flex;
+		justify-content: center;
+		position: relative;
+		margin-top: 60px;
+		width: 100%;
+	}
+	@media (max-width: 1000px) {
+		.offset-wrapper {
+			margin-top: 0px;
+		}
+	}
+</style>
