@@ -62,7 +62,6 @@
 	p {
 		opacity: 0;
 		transform: translateY(5px);
-		transition: all 1.5s ease;
 	}
 	h1 {
 		margin-bottom: 30px;
@@ -70,10 +69,11 @@
 		transition-delay: 0.5s;
 	}
 	p {
-		transition-delay: 2s;
+		transition: all 1.5s ease;
+		transition-delay: 1.5s;
 	}
 	p.second-line {
-		transition-delay: 3s;
+		transition-delay: 2.5s;
 	}
 
 	@media (max-width: 1000px) {
